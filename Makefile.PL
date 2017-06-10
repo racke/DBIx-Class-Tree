@@ -1,6 +1,8 @@
 use inc::Module::Install;
 
 BEGIN {
+  push @INC, ".";
+
   if ($Module::Install::AUTHOR) {
     require Module::Install::ReadmeFromPod;
   }
